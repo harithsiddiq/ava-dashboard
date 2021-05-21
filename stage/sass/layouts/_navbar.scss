@@ -1,0 +1,58 @@
+.topbar {
+    // navbar
+    .navbar-custom {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #EEE;
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        ul {
+            margin: 0;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            li {
+                a {
+                    text-decoration: none;
+                    color: var(--textColor);
+
+                    // reset font size 
+                    .fa {
+                        font-size: 18px;
+                        padding: 15px;
+
+                    }
+                    // bill nitify icon
+                    .bell {
+                        position: relative;
+
+                        span {
+                            display: none;
+                            position: absolute;
+                            color: white;
+                            background-color: red;
+                            text-align: center;
+                            border-radius: 50%;
+                            left: 0;
+                        }
+                    }
+                }
+
+                // profile image
+                .dropdown-profile {
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

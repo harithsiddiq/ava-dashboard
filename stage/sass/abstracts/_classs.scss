@@ -1,0 +1,21 @@
+// classes
+.body-pd {
+    padding-left: calc(var(--nav-width) + 0rem);
+}
+
+.show {
+    left: 0 !important;
+}
+
+.active_link {
+    color: var(--white-color);
+}
+
+.active_link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: aliceblue;
+}

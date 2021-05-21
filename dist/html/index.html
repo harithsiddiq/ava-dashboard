@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ava dashboard</title>
+</head>
+<body id="body-pd">
+
+    <header>
+        <div class="topbar">
+            <nav class="navbar-custom" aria-label="navbar">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bars" id="menu-toggle"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bell">
+                                <i class="fa fa-bell"></i>
+                                <span>3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown-profile">
+                            <a href="#">
+                                <span>Harith</span>
+                                <img src="../images/person.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav aria-label="">
+            <a href="#" class="nav_logo">
+                <i class="fa fa-user logo"></i>
+                <span class="nav_logo_name">Harith</span>
+            </a>
+
+            <ul class="nav_list list-unstyled">
+                <li class="nav__item">
+                    <a href="#" class="nav__link active_link">
+                        <i class="fa fa-phone nav__icon"></i>
+                        <span class="nav__name">Dahboard</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <i class="fa fa-phone nav__icon"></i>
+                        <span class="nav__name">Dahboard</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <i class="fa fa-phone nav__icon"></i>
+                        <span class="nav__name">Dahboard</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <i class="fa fa-phone nav__icon"></i>
+                        <span class="nav__name">Dahboard</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <!-- Start Page title  -->
+            <div class="page-title-box d-none">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+
+                <div class="date">
+                    date
+                </div>
+            </div>
+            <!-- End Page title  -->
+            
+            <!-- Start Page Cards  -->
+            <div class="page-card">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card orders">
+                            <a href="#">
+                                <div class="card-body">
+                                    <i class="fa fa-shopping-cart fa-3x cart"></i>
+                                    <div>
+                                        <span><strong>9</strong></span>
+                                        <span>Orders</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card member">
+                            <a href="#">
+                                <div class="card-body">
+                                    <i class="fa fa-users fa-3x users"></i>
+                                    <div>
+                                        <span><strong>9</strong></span>
+                                        <span>Member</span>
+                                    </div> 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card products">
+                            <a href="#">
+                                <div class="card-body">
+                                    <i class="fa fa-shopping-basket fa-3x basket"></i>
+                                    <div>
+                                        <span><strong>9</strong></span>
+                                        <span>Products</span>
+                                </div>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card penddig">
+                            <a href="#">
+                                <div class="card-body">
+                                    <i class="fa fa-low-vision fa-3x vision"></i>
+                                    <div>
+                                        <span><strong>9</strong></span>
+                                        <span>Pendding</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Cards -->
+
+            <main class="main-content">
+                <h5>component</h5>
+            </main>
+
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

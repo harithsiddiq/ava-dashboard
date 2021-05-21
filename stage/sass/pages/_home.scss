@@ -1,0 +1,114 @@
+:root {
+    // Colors
+    --textColor: #555;
+    --first-color: #263238;
+    --side-color:  #243B55; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --white-color: #fff;
+    --bg-color: #ECEFF1;
+
+    // sizes
+    --nav-width: 68px;
+    --normal-font-size: 1rem
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: var(--bg-color);
+    font-size: var(--normal-font-size);
+    transition: 0.4s;
+}
+
+.page-content {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    padding: 15px 8px 52px 8px;
+    display: inline-block;
+
+    // page title box
+    .page-title-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // cards 
+    .page-card {
+        color: white;
+        .card {
+            border: none;
+            margin: 5px 0;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            &:hover .card-body i  {
+                transform: scale(1.3, 1.3);
+            }
+            a {
+                all: unset;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .orders {
+            background-color: #7266ba;
+            background: -webkit-linear-gradient(to right, #3c1053);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,  #3c1053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+        }
+
+        .products {
+            background-color: #42a5f6;
+            background: #396afc;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right #2948ff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2948ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .penddig {
+            background: #ec008c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .member {
+            background-color: #f1b740;
+            background: #fc4a1a;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .card-body {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                transition: transform 0.2s;
+            }
+            .cart, .basket, .vision, .users {
+                opacity: 0.5;
+                align-self: center;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-size: 18px;
+
+                span:first-child {
+                    font-size: 25px;
+                }
+            }
+        }
+
+
+    }
+}
