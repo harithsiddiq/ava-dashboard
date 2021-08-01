@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/rtl.css">
+    <!-- <link rel="stylesheet" href="../css/rtl.css"> -->
+   
     <title>Ava dashboard</title>
 </head>
-<body id="body-pd">
+<body class="body-pd dark" id="body-pd">
 
     <header>
         <div class="topbar">
@@ -20,7 +21,7 @@
                 <ul class="list-unstyled">
                     <li>
                         <a href="#">
-                            <i class="fa fa-bars" id="menu-toggle"></i>
+                            <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -56,72 +57,101 @@
         </div>
     </header>
 
-    <div class="l-navbar" id="nav-bar">
+    <div class="l-navbar show" id="nav-bar">
         <nav aria-label="">
             <a href="#" class="nav_logo">
-                <i class="fa fa-user logo"></i>
+                <i class="fa fa-user logo" aria-hidden="true"></i>
                 <span class="nav_logo_name">Harith</span>
             </a>
 
             <ul class="nav_list list-unstyled">
+
+                <li><div class="sidebar-title opacity-1">admin</div></li>
+                <div class="nav__dropdown">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link opacity-1 active_link">
+                            <i class="fa fa-home nav__icon" aria-hidden="true"></i>
+                            <span class="nav__name">Dahboard</span>
+                            <i class="fa fa-chevron-down sm-chevron collapse-icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <div class="nav__dropdwon-collapse">
+                        <div class="nav__dropdown-content">
+                            <a href="#">eCommerce</a>
+                            <a href="#">Sales</a>
+                            <a href="#">Crypta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <div class="nav__dropdown">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link opacity-1">
+                            <i class="fa fa-hourglass nav__icon " aria-hidden="true"> </i>
+                            <span class="nav__name">DataTable</span>
+                            <i class="fa fa-chevron-down sm-chevron collapse-icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <div class="nav__dropdwon-collapse">
+                        <div class="nav__dropdown-content">
+                            <a href="./datatable.html">Zero configuration</a>
+                            <a href="./datatable.html">Advanced instialisation</a>
+                            <a href="./datatable.html">Data Source</a>
+                        </div>
+                    </div>
+                </div>
+
                 <li class="nav__item">
-                    <a href="#" class="nav__link active_link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-arrows-alt nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
-                        <span class="nav__name">Dahboard</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-tag nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
 
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-shopping-basket nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-envelope nav__icon" aria-hidden="true"></i>
+                        <span class="nav__name">Dahboard</span>
+                    </a>
+                </li>
+                <div class="sidebar-title opacity-1">setings</div>
+                <li class="nav__item">
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-comments nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-phone nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
-                        <span class="nav__name">Dahboard</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
-                        <span class="nav__name">Dahboard</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-cog nav__icon" aria-hidden="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <i class="fa fa-phone nav__icon"></i>
+                    <a href="#" class="nav__link opacity-1">
+                        <i class="fa fa-cogs nav__icon" aria-hidden="true" areai-heddin="true"></i>
                         <span class="nav__name">Dahboard</span>
                     </a>
                 </li>
@@ -129,93 +159,496 @@
         </nav>
     </div>
 
-    <div class="page-content">
-        <div class="container-fluid">
-            <!-- Start Page title  -->
-            <div class="page-title-box">
-                <!-- breadcrumb -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
-                    </ol>
-                </nav>
+    <main>
+        <div class="page-content">
+            <div class="container-fluid">
+                <!-- Start Page title  -->
+                <div class="page-title-box">
+                    <!-- breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
+                        </ol>
+                    </nav>
 
-                <div class="date">
-                    date
-                </div>
-            </div>
-            <!-- End Page title  -->
-            
-            <!-- Start Page Cards  -->
-            <div class="page-card">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card orders">
-                            <a href="#">
-                                <div class="card-body">
-                                    <i class="fa fa-shopping-cart fa-3x cart"></i>
-                                    <div>
-                                        <span><strong>9</strong></span>
-                                        <span>Orders</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card member">
-                            <a href="#">
-                                <div class="card-body">
-                                    <i class="fa fa-users fa-3x users"></i>
-                                    <div>
-                                        <span><strong>9</strong></span>
-                                        <span>Member</span>
-                                    </div> 
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card products">
-                            <a href="#">
-                                <div class="card-body">
-                                    <i class="fa fa-shopping-basket fa-3x basket"></i>
-                                    <div>
-                                        <span><strong>9</strong></span>
-                                        <span>Products</span>
-                                </div>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card penddig">
-                            <a href="#">
-                                <div class="card-body">
-                                    <i class="fa fa-low-vision fa-3x vision"></i>
-                                    <div>
-                                        <span><strong>9</strong></span>
-                                        <span>Pendding</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="date">
+                        date
                     </div>
                 </div>
+                <!-- End Page title  -->
+                
+                <!-- Start Page Cards  -->
+                <div class="page-card d-none">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card orders">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <i class="fa fa-shopping-cart fa-3x cart"></i>
+                                        <div>
+                                            <span><strong>9</strong></span>
+                                            <span>Orders</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card member">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <i class="fa fa-users fa-3x users"></i>
+                                        <div>
+                                            <span><strong>9</strong></span>
+                                            <span>Member</span>
+                                        </div> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card products">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <i class="fa fa-shopping-basket fa-3x basket"></i>
+                                        <div>
+                                            <span><strong>9</strong></span>
+                                            <span>Products</span>
+                                    </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card penddig">
+                                <a href="#">
+                                    <div class="card-body">
+                                        <i class="fa fa-low-vision fa-3x vision"></i>
+                                        <div>
+                                            <span><strong>9</strong></span>
+                                            <span>Pendding</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Page Cards -->
+
+                <!-- Start Page card 2 -->
+                <div class="glass-card">
+                    <div class="glass">
+                        <div class="title">Products</div>
+                        <div class="body">0</div>
+                        <span class="mini-tag">jan dec</span>
+                    </div>
+                    <div class="glass">
+                        <div class="title">New Coustomer</div>
+                        <div class="body">0</div>
+                        <span class="mini-tag">jan dec</span>
+                    </div>
+                    <div class="glass">
+                        <div class="title">Orders</div>
+                        <div class="body">0</div>
+                        <span class="mini-tag">jan dec</span>
+                    </div>
+                    <div class="glass">
+                        <div class="title">Net Profit</div>
+                        <div class="body">0</div>
+                        <span class="mini-tag">jan dec</span>
+                    </div>
+                </div>
+                
+                <!-- End Page card 2 -->
+                
+                <main class="main-content pt-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card custom-card">
+                                <div class="card-header buttons">
+                                    <span class="fusion-chart">Apex charts</span>
+                                    <div class="buttons">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-header buttons fusion-chart">
+                                    <span>Basic Table</span>
+                                    <div class="buttons">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-borderless">
+                                        <caption></caption>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header ">
+                                    <span class="fusion-chart">Recent Transactions</span>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <caption>User data</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    Apex Chart
+                                </div>
+                                <div class="card-body">
+                                    <div id="chart">
+                                        <div id="areachart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </main>
+
             </div>
-            <!-- End Page Cards -->
-
-            <main class="main-content">
-                <h5>component</h5>
-            </main>
-
         </div>
-    </div>
+    </main>
 
+    <footer>
+        <div>Copyright © 2021 EEVA</div>
+        <div>Made with <i class="fa fa-heart pink" aria-hidden="true"></i> by Harith</div>
+    </footer>
 
+    
     <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/main.js"></script>
+    <script type="module" src="../js/charts.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        
+    var options = {
+            series: [{
+            name: "Desktops",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        }],
+            chart: {
+            height: 350,
+            type: 'line',
+            zoom: {
+            enabled: false
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'straight'
+        },
+        title: {
+            text: 'Product Trends by Month',
+            align: 'left'
+        },
+        grid: {
+            row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+            },
+        },
+        xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+        }
+        };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+    </script>
+
+    <!-- Chart -->
+    <!-- Step 1 - Include the fusioncharts core library -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- Step 2 - Include the fusion theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script>
+        //STEP 2 - Chart Data
+        const chartData = [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }];
+    
+        //STEP 3 - Chart Configurations
+        const chartConfig = {
+        type: 'column2d',
+        renderAt: 'chart-container',
+        width: '100%',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+                },
+            // Chart Data
+            "data": chartData
+            }
+        };
+        FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfig);
+        fusioncharts.render();
+        });
+    </script>
+
+    <script>
+        var options = {
+        chart: {
+            type: "area",
+            height: 300,
+            foreColor: "#999",
+            stacked: true,
+            dropShadow: {
+            enabled: true,
+            enabledSeries: [0],
+            top: -2,
+            left: 2,
+            blur: 5,
+            opacity: 0.06
+            }
+        },
+        colors: ['#00E396', '#0090FF'],
+        stroke: {
+            curve: "smooth",
+            width: 3
+        },
+        dataLabels: {
+            enabled: false
+        },
+        series: [{
+            name: 'Total Views',
+            data: generateDayWiseTimeSeries(0, 18)
+        }, {
+            name: 'Unique Views',
+            data: generateDayWiseTimeSeries(1, 18)
+        }],
+        markers: {
+            size: 0,
+            strokeColor: "#fff",
+            strokeWidth: 3,
+            strokeOpacity: 1,
+            fillOpacity: 1,
+            hover: {
+            size: 6
+            }
+        },
+        xaxis: {
+            type: "datetime",
+            axisBorder: {
+            show: false
+            },
+            axisTicks: {
+            show: false
+            }
+        },
+        yaxis: {
+            labels: {
+            offsetX: 14,
+            offsetY: -5
+            },
+            tooltip: {
+            enabled: true
+            }
+        },
+        grid: {
+            padding: {
+            left: -5,
+            right: 5
+            }
+        },
+        tooltip: {
+            x: {
+            format: "dd MMM yyyy"
+            },
+        },
+        legend: {
+            position: 'top',
+            horizontalAlign: 'left'
+        },
+        fill: {
+            type: "solid",
+            fillOpacity: 0.7
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#timeline-chart"), options);
+
+        chart.render();
+
+        function generateDayWiseTimeSeries(s, count) {
+        var values = [[
+            4,3,10,9,29,19,25,9,12,7,19,5,13,9,17,2,7,5
+        ], [
+            2,3,8,7,22,16,23,7,11,5,12,5,10,4,15,2,6,2
+        ]];
+        var i = 0;
+        var series = [];
+        var x = new Date("11 Nov 2012").getTime();
+        while (i < count) {
+            series.push([x, values[s][i]]);
+            x += 86400000;
+            i++;
+        }
+        return series;
+        }
+    </script>
+
 </body>
 </html>

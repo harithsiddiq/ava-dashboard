@@ -1,3 +1,20 @@
+
+.topbar {
+    // navbar
+    .navbar-custom {
+        border-bottom: 2px solid #EEE;
+        background-color: white;
+    }
+
+    ul {
+        li {
+            a {
+                color: var(--textColor);
+            }
+        }
+    }
+}
+
 .topbar {
     // navbar
     .navbar-custom {
@@ -5,9 +22,7 @@
         height: 50px;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #EEE;
-        background-color: white;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         ul {
             margin: 0;
@@ -17,7 +32,6 @@
             li {
                 a {
                     text-decoration: none;
-                    color: var(--textColor);
 
                     // reset font size 
                     .fa {

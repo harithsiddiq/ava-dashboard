@@ -1,15 +1,42 @@
 :root {
     // Colors
-    --textColor: #555;
-    --first-color: #263238;
-    --side-color:  #243B55; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    --white-color: #ffffff;
-    --bg-color: #f1f2f7;
+    // --textColor: #555;
+    // --first-color: #263238;
+    // --dark-color: #111;
+    // --side-color:  #243B55; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // --white-color: #ffffff;
+    // --bg-color: #f1f2f7;
 
     // sizes
     --nav-width: 68px;
     --normal-font-size: 1rem
 }
+//home default colors
+body {
+    background-color: var(--bg-color);
+}
+
+.glass-card {
+    .glass {
+        background-color: white;
+        border: 1px solid rgb(238, 238, 238);
+    }
+    .title {
+        color: #8c98a4;
+    }
+}
+
+.page-content {
+    color: #000;
+}
+
+footer {
+    background-color: #111111;
+    color: #888;
+
+}
+
+// home
 
 a {
     text-decoration: none;
@@ -23,7 +50,6 @@ ul {
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    background-color: var(--bg-color);
     font-size: var(--normal-font-size);
     transition: 0.4s;
 }
@@ -114,4 +140,43 @@ body {
             }
         }
     }
+
+
+    .glass-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+        .glass {
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 18px 1px rgb(49 53 72 / 10%);
+
+            .title {
+                font-size: 14px;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+            }
+
+            .body {
+                padding-bottom: 0.5rem;
+            }
+
+            .mini-tag {
+                background-color: rgba(0,201,167,.1);
+                color: #00c9a7;
+                font-size: 14px;
+                padding: 2px 5px;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    box-shadow: 0 2px 18px 1px rgb(49 53 72 / 10%);
+    font-size: 0.8rem;
 }

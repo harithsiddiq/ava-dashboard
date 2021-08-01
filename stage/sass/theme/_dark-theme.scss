@@ -1,0 +1,124 @@
+// body and navbar
+body.dark {
+    background-color: #121212;
+
+    .table {
+        color: rgba(255, 255, 255, 0.678) ;
+    }
+
+    .glass-card {
+        .glass {
+            background-color: #1e1e1e;
+            border: none
+        }
+        .title {
+            color: rgba(255, 255, 255, 0.678)
+        }
+        .body {
+            color: rgba(255, 255, 255, 0.678)
+        }
+    }
+    
+    footer {
+        background-color: #1e1e1e;
+        color: #fff;
+    
+    }
+
+    .card {
+        .card-header, .card-footer, .card-body {
+            background-color: #1e1e1e;
+        }
+        
+        .buttons {
+            color: rgba(255, 255, 255, 0.678)
+        }
+        
+        
+        .fusion-chart {
+            color: rgba(255, 255, 255, 0.678)
+        }
+    }
+
+    .topbar {
+        // navbar
+        .navbar-custom {
+            border-bottom: 2px solid #121212;
+            background-color: #1e1e1e;
+        }
+    
+        ul {
+            li {
+                a {
+                    color: rgba(255, 255, 255, 0.678)
+                }
+            }
+        }
+    }
+    .page-content {
+        color: rgba(255, 255, 255, 0.678)
+    }
+}
+
+//sidebar
+body.dark {
+    .l-navbar {
+        background-color: #1e1e1e;
+        box-shadow: 0 2px 18px 1px rgb(49 53 72 / 10%);
+    }
+    
+    .nav__dropdwon-collapse {
+        background-color: rgb(0 0 0 / 25%);
+    }   
+    
+    .sidebar-title {
+        color: rgba(255, 255, 255, 0.678)
+    }
+    
+    .nav__link {
+        color: rgba(255, 255, 255, 0.678);
+        &:hover {
+            color: #687088
+        }
+    }
+    
+    .nav__dropdown {
+        .nav__dropdwon-collapse {
+            .nav__dropdown-content {
+                background-color: #121212;
+                a {
+                    color: rgba(255, 255, 255, 0.678);
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }    
+
+    nav {        
+        &::-webkit-scrollbar-track {
+            background-color: #1e1e1e;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #121212;
+        }
+
+        .nav_logo {
+            .logo {
+                color: #687088;
+            }
+        
+            .nav_logo_name {
+                color: #687088;
+            }
+        } 
+    }
+
+    .nav__item {
+        .nav__link {
+            color: rgba(255, 255, 255, 0.678);
+        }
+        &:hover {
+            background-color: #121212
+        }
+    }
+}

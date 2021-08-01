@@ -1,0 +1,12 @@
+.btn-primary-grad {
+    background: #2cc7c0;
+    background: -webkit-linear-gradient(
+0deg
+,#2cc7c0,#59d99d);
+    background: linear-gradient(
+90deg
+,#2cc7c0,#59d99d);
+    border: none;
+    box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 15%), 0 1px 1px rgb(49 49 49 / 8%);
+    color: #fff;
+}

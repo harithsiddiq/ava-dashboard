@@ -19,19 +19,35 @@
   background-color: aliceblue;
 }
 
-html {
-  direction: rtl;
+.gap-18 {
+  column-gap: 1rem;
 }
 
-body::-webkit-scrollbar {
-  width: 0.4rem;
+.open__collapse-menu {
+  max-height: 100rem !important;
 }
-body::-webkit-scrollbar-track {
-  background-color: #1e1e24;
+.open__collapse-menu .collapse-icon {
+  transform: rotate(180deg);
 }
-body::-webkit-scrollbar-thumb {
-  background-color: #50506e;
-  border-radius: 15px;
+.open__collapse-menu i {
+  min-width: 20px;
+}
+
+.sm-chevron {
+  font-size: 10px;
+}
+
+.opacity-1 .nav__name {
+  opacity: 1 !important;
+}
+
+.sidebar-title.opacity-1 {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+html {
+  direction: rtl;
 }
 
 .body-pd {
@@ -63,49 +79,50 @@ ul {
   padding-left: 0 !important;
 }
 .l-navbar nav {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .l-navbar nav::-webkit-scrollbar {
-  width: 0.75rem;
-}
-.l-navbar nav::-webkit-scrollbar-track {
-  background-color: #1e1e24;
+  width: 0.5rem;
 }
 .l-navbar nav::-webkit-scrollbar-thumb {
-  background-color: #1e1e24;
+  border-radius: 5px;
 }
-.l-navbar nav .nav_logo, .l-navbar nav .nav__link {
+.l-navbar nav .nav_logo {
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: max-content max-content max-content;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 1.8rem;
 }
 .l-navbar nav .nav_logo {
   padding: 0.5rem 1.5rem 0.5rem 0 !important;
 }
 .l-navbar nav .nav__item {
-  margin: 0.5rem 0;
   position: relative;
   padding-right: 0;
 }
 .l-navbar nav .nav__item .nav__link {
   position: relative;
-  padding: 0.5rem 1.5rem 0.5rem 0 !important;
-  color: var(--white-color);
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
-.l-navbar nav .nav__item .nav__link:hover {
-  color: #CCC;
+.l-navbar nav .nav__item .nav__link i:first-child {
+  min-width: 20px;
+  margin-left: 15px;
+  margin-right: none;
+}
+.l-navbar nav .nav__item .nav__link .sm-chevron {
+  display: block;
+  margin-right: auto;
+  margin-left: 15px;
 }
 .l-navbar nav .nav_logo {
   margin-bottom: 2rem;
 }
 .l-navbar nav .nav_logo .logo {
   font-size: 1.25rem;
-  color: var(--white-color);
 }
 .l-navbar nav .nav_logo .nav_logo_name {
-  color: var(--white-color);
   font-weight: 700;
 }
 

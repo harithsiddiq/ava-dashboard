@@ -1,0 +1,43 @@
+.card {
+    .card-header, .card-footer {
+        background-color: #fff;
+    }
+    
+    .buttons {
+        color: rgb(51, 50, 50, 0.7);
+    }
+    
+    
+    .fusion-chart {
+        color: #5d62b5
+    }
+}
+
+.card {
+    margin-bottom: 1.875rem;
+    border: none;
+    box-shadow: 0 2px 18px 1px rgb(49 53 72 / 10%);
+    border-radius: .45rem;
+
+    .card-header, .card-footer {
+        border: none;
+        padding-top: 1rem;
+        font-weight: 500;
+        letter-spacing: .05rem;
+        font-size: 1.12rem;
+    }
+
+    .card-header.buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons {
+        i {
+            cursor: pointer;
+            padding: 0 0.2rem;
+        }
+    }
+    
+}
