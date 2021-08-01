@@ -36,3 +36,22 @@ function colorLink() {
 }
 
 linkColor.forEach(el => el.addEventListener('click', colorLink))
+
+// End Navbar Show //
+
+
+// toggle fullscreen body
+
+const fsreenBtn = document.querySelector('#toggle-expanded');
+const body = document.querySelector('html');
+function toggleScreen() {
+    if(body) {
+        if(body.requestFullscreen) {
+            body.requestFullscreen()
+        }
+    }
+}
+
+fsreenBtn.addEventListener('click', toggleScreen);
+
+// end toggling full scrren

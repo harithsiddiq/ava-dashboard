@@ -1,0 +1,139 @@
+.body-pd {
+  padding-left: calc(var(--nav-width) + 0rem);
+}
+
+.show {
+  left: 0 !important;
+}
+
+.active_link {
+  color: var(--white-color);
+}
+
+.active_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: aliceblue;
+}
+
+html {
+  direction: rtl;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #50506e;
+  border-radius: 15px;
+}
+
+.body-pd {
+  padding-left: initial;
+  padding-right: calc(var(--nav-width) + 0rem) !important;
+}
+
+.show {
+  left: initial;
+  right: 0 !important;
+}
+
+.active_link {
+  color: var(--white-color);
+}
+
+.active_link::before {
+  right: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.l-navbar {
+  left: unset;
+  right: -30%;
+  padding-left: 0 !important;
+}
+.l-navbar nav {
+  overflow-y: scroll;
+}
+.l-navbar nav::-webkit-scrollbar {
+  width: 0.75rem;
+}
+.l-navbar nav::-webkit-scrollbar-track {
+  background-color: #1e1e24;
+}
+.l-navbar nav::-webkit-scrollbar-thumb {
+  background-color: #1e1e24;
+}
+.l-navbar nav .nav_logo, .l-navbar nav .nav__link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+}
+.l-navbar nav .nav_logo {
+  padding: 0.5rem 1.5rem 0.5rem 0 !important;
+}
+.l-navbar nav .nav__item {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-right: 0;
+}
+.l-navbar nav .nav__item .nav__link {
+  position: relative;
+  padding: 0.5rem 1.5rem 0.5rem 0 !important;
+  color: var(--white-color);
+  transition: 0.3s;
+}
+.l-navbar nav .nav__item .nav__link:hover {
+  color: #CCC;
+}
+.l-navbar nav .nav_logo {
+  margin-bottom: 2rem;
+}
+.l-navbar nav .nav_logo .logo {
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+.l-navbar nav .nav_logo .nav_logo_name {
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+@media (max-width: 787px) {
+  .l-navbar:hover {
+    width: calc(var(--nav-width) + 156px);
+  }
+}
+@media (min-width: 786px) {
+  body {
+    padding-left: initial;
+    padding-right: calc(var(--nav-width) + 0.2rem);
+  }
+
+  .l-navbar {
+    left: initial;
+    right: 0;
+    padding: 0rem 0 0 1rem;
+  }
+
+  .show {
+    width: calc(var(--nav-width) + 156px);
+  }
+
+  .body-pd {
+    padding-left: unset;
+    padding-right: calc(var(--nav-width) + 158px) !important;
+  }
+}
+
+/*# sourceMappingURL=rtl.css.map */
